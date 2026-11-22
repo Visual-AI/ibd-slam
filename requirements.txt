@@ -1,0 +1,10 @@
+# torch==2.4.1 / torchvision==0.19.1 (CUDA 12.1) are installed separately, see README
+numpy==1.26.4
+opencv-python==4.11.0.86
+scipy==1.15.3
+scikit-image==0.25.2
+imageio==2.38.0
+open3d==0.20.0
+trimesh==5.2.2
+tensorboard==2.21.0
+einops==0.8.2

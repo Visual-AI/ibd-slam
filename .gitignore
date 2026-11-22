@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/
+pretrained/
+third_party/
+outputs/
+runs/
