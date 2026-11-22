@@ -61,17 +61,11 @@ python scripts/eval_recon.py --run outputs/replica/replica_room0 --scene room0
 novel-view renderings and `slam_result.json` (ATE RMSE, Depth L1, PSNR, SSIM, timings).
 `eval_recon.py` writes `mesh_d8.ply` and `recon_result_d8.json`.
 
-Results (averages over the 8 Replica scenes; ATE / Depth L1 / Acc / Comp in cm, Comp. Ratio in %):
-
-| | ATE | Depth L1 | PSNR | SSIM | Acc | Comp | Comp. Ratio | Comp (vis) | Comp. Ratio (vis) |
-|---|---|---|---|---|---|---|---|---|---|
-| IBRNet weights, untrained xyz head (`--ckpt ibrnet`) | 0.64 | 0.70 | 30.48 | 0.961 | 1.50 | 4.12 | 84.3 | 2.31 | 94.7 |
-| `ibdslam_scannet.pth` | 0.64 | 0.22 | 30.72 | 0.967 | 1.47 | 4.31 | 83.5 | 2.53 | 93.9 |
-
 - Depth L1 compares the depth of the rendered xyz-map with the sensor depth at every mapped frame.
 - Acc / Comp / Comp. Ratio use 200k surface samples on the predicted and culled GT meshes (NICE-SLAM protocol).
-  The culled GT meshes still contain surfaces that are occluded in every frame (about 14% of the area), so the
-  `(vis)` columns additionally restrict both sample sets to points observed in at least one GT depth map.
+  The `*_vis` variants additionally restrict both sample sets to points observed in at least one GT depth map,
+  since the culled GT meshes still contain surfaces that are occluded in every frame.
+- Use `--ckpt ibrnet` for a baseline with IBRNet weights and an untrained (uniform) xyz head.
 
 ## Tracking
 
