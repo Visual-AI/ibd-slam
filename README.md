@@ -110,3 +110,9 @@ This code builds on [IBRNet](https://github.com/googleinterns/IBRNet),
   year      = {2024}
 }
 ```
+
+## License
+
+IBD-SLAM is licensed under [CC BY-NC-SA 4.0](LICENSE). You may use, modify and share it for non-commercial research and education, with attribution; modified versions must be shared under the same license. For commercial use, please contact the authors.
+
+The third-party code fetched by `setup.sh` (IBRNet, SuperGlue, UniMatch) and the datasets keep their own licenses. SuperGlue and ScanNet, on which the released model is trained, are restricted to non-commercial research use.
