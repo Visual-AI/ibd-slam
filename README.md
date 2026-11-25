@@ -19,7 +19,7 @@ Pretrained weights go to `pretrained/`:
 
 | file | source |
 |---|---|
-| `ibdslam_scannet.pth` | IBD-SLAM model trained on ScanNet, [download](https://github.com/mhyqwe/ibd-slam/releases/download/v1.0/ibdslam_scannet.pth) |
+| `ibdslam_scannet.pth` | IBD-SLAM model trained on ScanNet, [download](https://github.com/Visual-AI/ibd-slam/releases/download/v1.0/ibdslam_scannet.pth) |
 | `model_255000.pth` | IBRNet weights, from `pretrained_model.zip` of the [IBRNet repository](https://github.com/googleinterns/IBRNet#evaluation); used to initialise training |
 | `gmflow-...-4e7b215d.pth` | downloaded by `setup.sh`; only needed for training (optical-flow loss) |
 
